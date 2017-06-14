@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1382D5D790D3DF8CBF7C043F /* Pods_Omicron.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B3278561570DDD12ECC8FF /* Pods_Omicron.framework */; };
+		54AFE18A369A395BA069BB1E /* Pods_OmicronTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23F679F80BEEF03ECDC9DF8 /* Pods_OmicronTests.framework */; };
+		8FCD6C23C68591C375C64206 /* Pods_OmicronUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA47C6803BDDBF8A700EBD2 /* Pods_OmicronUITests.framework */; };
+		F148AED31EF1839000F00AEA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F148AED21EF1839000F00AEA /* Constants.swift */; };
 		F18282261EF0343F00B2B753 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18282251EF0343F00B2B753 /* AppDelegate.swift */; };
-		F18282281EF0343F00B2B753 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18282271EF0343F00B2B753 /* ViewController.swift */; };
 		F182822B1EF0343F00B2B753 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F18282291EF0343F00B2B753 /* Main.storyboard */; };
 		F182822D1EF0343F00B2B753 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F182822C1EF0343F00B2B753 /* Assets.xcassets */; };
 		F18282301EF0343F00B2B753 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F182822E1EF0343F00B2B753 /* LaunchScreen.storyboard */; };
 		F182823B1EF0343F00B2B753 /* OmicronTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F182823A1EF0343F00B2B753 /* OmicronTests.swift */; };
 		F18282461EF0343F00B2B753 /* OmicronUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18282451EF0343F00B2B753 /* OmicronUITests.swift */; };
+		F18282541EF0346700B2B753 /* PostsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18282531EF0346700B2B753 /* PostsVC.swift */; };
+		F182825A1EF034BB00B2B753 /* PostsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18282591EF034BB00B2B753 /* PostsCell.swift */; };
+		F182825C1EF034D700B2B753 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F182825B1EF034D700B2B753 /* Posts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +40,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1ED4D6708FC794D64F7CB711 /* Pods-OmicronUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmicronUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OmicronUITests/Pods-OmicronUITests.release.xcconfig"; sourceTree = "<group>"; };
+		287AB969BF9BA9ED1FF8B9E5 /* Pods-OmicronTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmicronTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OmicronTests/Pods-OmicronTests.release.xcconfig"; sourceTree = "<group>"; };
+		573E4A2E376CE6D6B62BC86C /* Pods-OmicronTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmicronTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OmicronTests/Pods-OmicronTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7C0EC7BC2BC5BDA3CBE4B0F9 /* Pods-Omicron.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Omicron.release.xcconfig"; path = "Pods/Target Support Files/Pods-Omicron/Pods-Omicron.release.xcconfig"; sourceTree = "<group>"; };
+		9EA47C6803BDDBF8A700EBD2 /* Pods_OmicronUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OmicronUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1B3278561570DDD12ECC8FF /* Pods_Omicron.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Omicron.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B23F679F80BEEF03ECDC9DF8 /* Pods_OmicronTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OmicronTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA30F9F52BC7B62E30C6D1FF /* Pods-OmicronUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmicronUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OmicronUITests/Pods-OmicronUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F148AED21EF1839000F00AEA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F18282221EF0343F00B2B753 /* Omicron.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Omicron.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F18282251EF0343F00B2B753 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F18282271EF0343F00B2B753 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F182822A1EF0343F00B2B753 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F182822C1EF0343F00B2B753 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F182822F1EF0343F00B2B753 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +61,10 @@
 		F18282411EF0343F00B2B753 /* OmicronUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OmicronUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F18282451EF0343F00B2B753 /* OmicronUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmicronUITests.swift; sourceTree = "<group>"; };
 		F18282471EF0343F00B2B753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F18282531EF0346700B2B753 /* PostsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsVC.swift; sourceTree = "<group>"; };
+		F18282591EF034BB00B2B753 /* PostsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsCell.swift; sourceTree = "<group>"; };
+		F182825B1EF034D700B2B753 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		F9297BD6EBCF3C5633DC7E7B /* Pods-Omicron.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Omicron.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Omicron/Pods-Omicron.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1382D5D790D3DF8CBF7C043F /* Pods_Omicron.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54AFE18A369A395BA069BB1E /* Pods_OmicronTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +88,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FCD6C23C68591C375C64206 /* Pods_OmicronUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33167D75EC947D1ECD973699 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1B3278561570DDD12ECC8FF /* Pods_Omicron.framework */,
+				B23F679F80BEEF03ECDC9DF8 /* Pods_OmicronTests.framework */,
+				9EA47C6803BDDBF8A700EBD2 /* Pods_OmicronUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A79689B73A80A13DD064FBD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9297BD6EBCF3C5633DC7E7B /* Pods-Omicron.debug.xcconfig */,
+				7C0EC7BC2BC5BDA3CBE4B0F9 /* Pods-Omicron.release.xcconfig */,
+				573E4A2E376CE6D6B62BC86C /* Pods-OmicronTests.debug.xcconfig */,
+				287AB969BF9BA9ED1FF8B9E5 /* Pods-OmicronTests.release.xcconfig */,
+				DA30F9F52BC7B62E30C6D1FF /* Pods-OmicronUITests.debug.xcconfig */,
+				1ED4D6708FC794D64F7CB711 /* Pods-OmicronUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F18282191EF0343F00B2B753 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +125,8 @@
 				F18282391EF0343F00B2B753 /* OmicronTests */,
 				F18282441EF0343F00B2B753 /* OmicronUITests */,
 				F18282231EF0343F00B2B753 /* Products */,
+				8A79689B73A80A13DD064FBD /* Pods */,
+				33167D75EC947D1ECD973699 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,11 +143,10 @@
 		F18282241EF0343F00B2B753 /* Omicron */ = {
 			isa = PBXGroup;
 			children = (
-				F18282251EF0343F00B2B753 /* AppDelegate.swift */,
-				F18282271EF0343F00B2B753 /* ViewController.swift */,
-				F18282291EF0343F00B2B753 /* Main.storyboard */,
-				F182822C1EF0343F00B2B753 /* Assets.xcassets */,
-				F182822E1EF0343F00B2B753 /* LaunchScreen.storyboard */,
+				F18282581EF0349300B2B753 /* Model */,
+				F18282561EF0347A00B2B753 /* View */,
+				F18282571EF0348600B2B753 /* Controller */,
+				F18282551EF0347000B2B753 /* Support */,
 				F18282311EF0343F00B2B753 /* Info.plist */,
 			);
 			path = Omicron;
@@ -125,6 +170,42 @@
 			path = OmicronUITests;
 			sourceTree = "<group>";
 		};
+		F18282551EF0347000B2B753 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				F18282251EF0343F00B2B753 /* AppDelegate.swift */,
+				F182822C1EF0343F00B2B753 /* Assets.xcassets */,
+				F182822E1EF0343F00B2B753 /* LaunchScreen.storyboard */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		F18282561EF0347A00B2B753 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F18282291EF0343F00B2B753 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F18282571EF0348600B2B753 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F18282531EF0346700B2B753 /* PostsVC.swift */,
+				F18282591EF034BB00B2B753 /* PostsCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F18282581EF0349300B2B753 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F182825B1EF034D700B2B753 /* Posts.swift */,
+				F148AED21EF1839000F00AEA /* Constants.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F182824A1EF0343F00B2B753 /* Build configuration list for PBXNativeTarget "Omicron" */;
 			buildPhases = (
+				D0319E603A1B7EF0E752AE05 /* [CP] Check Pods Manifest.lock */,
 				F182821E1EF0343F00B2B753 /* Sources */,
 				F182821F1EF0343F00B2B753 /* Frameworks */,
 				F18282201EF0343F00B2B753 /* Resources */,
+				1E2B7BEED8035F00ABB38403 /* [CP] Embed Pods Frameworks */,
+				20F3E90E6E9327FF1FC5D410 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +233,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F182824D1EF0343F00B2B753 /* Build configuration list for PBXNativeTarget "OmicronTests" */;
 			buildPhases = (
+				FC8AB72E2E31CC3DE0DB7C1C /* [CP] Check Pods Manifest.lock */,
 				F18282321EF0343F00B2B753 /* Sources */,
 				F18282331EF0343F00B2B753 /* Frameworks */,
 				F18282341EF0343F00B2B753 /* Resources */,
+				5D5DC3A9FA3C74DB0AB45710 /* [CP] Embed Pods Frameworks */,
+				DBA8E833745D23350E779B28 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +254,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F18282501EF0343F00B2B753 /* Build configuration list for PBXNativeTarget "OmicronUITests" */;
 			buildPhases = (
+				D04C2FC2700380BE36B75E37 /* [CP] Check Pods Manifest.lock */,
 				F182823D1EF0343F00B2B753 /* Sources */,
 				F182823E1EF0343F00B2B753 /* Frameworks */,
 				F182823F1EF0343F00B2B753 /* Resources */,
+				4340E17C2F9DAD5442E3DE30 /* [CP] Embed Pods Frameworks */,
+				F96E1719C39F793B28448167 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,13 +283,16 @@
 				TargetAttributes = {
 					F18282211EF0343F00B2B753 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 					};
 					F18282351EF0343F00B2B753 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						TestTargetID = F18282211EF0343F00B2B753;
 					};
 					F18282401EF0343F00B2B753 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						TestTargetID = F18282211EF0343F00B2B753;
 					};
 				};
@@ -251,13 +344,154 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E2B7BEED8035F00ABB38403 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Omicron/Pods-Omicron-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		20F3E90E6E9327FF1FC5D410 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Omicron/Pods-Omicron-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4340E17C2F9DAD5442E3DE30 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OmicronUITests/Pods-OmicronUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D5DC3A9FA3C74DB0AB45710 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OmicronTests/Pods-OmicronTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0319E603A1B7EF0E752AE05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D04C2FC2700380BE36B75E37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DBA8E833745D23350E779B28 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OmicronTests/Pods-OmicronTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F96E1719C39F793B28448167 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OmicronUITests/Pods-OmicronUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC8AB72E2E31CC3DE0DB7C1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F182821E1EF0343F00B2B753 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F18282281EF0343F00B2B753 /* ViewController.swift in Sources */,
+				F148AED31EF1839000F00AEA /* Constants.swift in Sources */,
+				F182825A1EF034BB00B2B753 /* PostsCell.swift in Sources */,
+				F18282541EF0346700B2B753 /* PostsVC.swift in Sources */,
 				F18282261EF0343F00B2B753 /* AppDelegate.swift in Sources */,
+				F182825C1EF034D700B2B753 /* Posts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +533,7 @@
 				F182822A1EF0343F00B2B753 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		F182822E1EF0343F00B2B753 /* LaunchScreen.storyboard */ = {
@@ -307,6 +542,7 @@
 				F182822F1EF0343F00B2B753 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -332,6 +568,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -387,6 +625,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -417,6 +657,7 @@
 		};
 		F182824B1EF0343F00B2B753 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9297BD6EBCF3C5633DC7E7B /* Pods-Omicron.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y58S2QM826;
@@ -424,6 +665,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.greekappllc.Omicron;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -431,6 +673,7 @@
 		};
 		F182824C1EF0343F00B2B753 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C0EC7BC2BC5BDA3CBE4B0F9 /* Pods-Omicron.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y58S2QM826;
@@ -438,6 +681,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.greekappllc.Omicron;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -445,6 +689,7 @@
 		};
 		F182824E1EF0343F00B2B753 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 573E4A2E376CE6D6B62BC86C /* Pods-OmicronTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -453,6 +698,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.greekappllc.OmicronTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Omicron.app/Omicron";
@@ -461,6 +707,7 @@
 		};
 		F182824F1EF0343F00B2B753 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 287AB969BF9BA9ED1FF8B9E5 /* Pods-OmicronTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -469,6 +716,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.greekappllc.OmicronTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Omicron.app/Omicron";
@@ -477,6 +725,7 @@
 		};
 		F18282511EF0343F00B2B753 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA30F9F52BC7B62E30C6D1FF /* Pods-OmicronUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = Y58S2QM826;
@@ -484,6 +733,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.greekappllc.OmicronUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Omicron;
@@ -492,6 +742,7 @@
 		};
 		F18282521EF0343F00B2B753 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ED4D6708FC794D64F7CB711 /* Pods-OmicronUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = Y58S2QM826;
@@ -499,6 +750,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.greekappllc.OmicronUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Omicron;
@@ -524,6 +776,7 @@
 				F182824C1EF0343F00B2B753 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F182824D1EF0343F00B2B753 /* Build configuration list for PBXNativeTarget "OmicronTests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +785,7 @@
 				F182824F1EF0343F00B2B753 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F18282501EF0343F00B2B753 /* Build configuration list for PBXNativeTarget "OmicronUITests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +794,7 @@
 				F18282521EF0343F00B2B753 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
