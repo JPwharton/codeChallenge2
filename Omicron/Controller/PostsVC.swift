@@ -39,16 +39,18 @@ class PostsVC: UITableViewController {
         return cell
     }
     
-    fileprivate func getPosts(){
-        DispatchQueue.global(qos: .userInteractive).async {[weak self] in
+    fileprivate func getPosts() {
+        DispatchQueue.global(qos: .userInteractive).async { [weak self] in
             guard let url = URL(string:redditURL) else {return}
             URLSession.shared.dataTask(with:url , completionHandler: { (data, response, error) in
-                guard error == nil else {print("Error in GET \(error!.localizedDescription)");return}
+                guard error == nil else {
+                    print("Error in GET \(error!.localizedDescription)")
+                    return}
                 guard let data = data else {return}
                 let rawJSON = try? JSONSerialization.jsonObject(with: data)
                 guard let json = rawJSON as? [String:Any] else {return}
                 
-                //GET INSIDE JSON NODES
+                // GET INSIDE JSON NODES
                 if let parentData = json["data"] as? [String:Any] {
                     if let childrenNode = parentData["children"] as? [[String:Any]] {
                         childrenNode.forEach({ (key) in
@@ -64,6 +66,5 @@ class PostsVC: UITableViewController {
                 }
             }).resume()
         }
-
     }
 }

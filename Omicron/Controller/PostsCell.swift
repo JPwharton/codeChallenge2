@@ -78,7 +78,7 @@ class PostsCell: UITableViewCell {
         avaImage.image = nil
         
         // Request image loading in background
-        DispatchQueue.global(qos: .userInteractive).async {[weak self] in
+        DispatchQueue.global(qos: .userInteractive).async { [weak self] in
             URLSession.shared.dataTask(with: imgURL) { (data, response, error) in
                 if error != nil {
                     print("Failed loading image \(error!.localizedDescription)")
