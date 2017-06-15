@@ -30,7 +30,7 @@ struct Posts {
     var postURL : String
     var over18 : Bool
     
-    init?(json:[String:Any]){
+    init?(json:[String:Any]) {
         
         guard let title = json[jsonKey.title],
         let subReddit = json[jsonKey.subReddit],

@@ -20,11 +20,11 @@ class PostsCell: UITableViewCell {
     
     private var imageCache = [String:UIImage]()
     
-    //Prevent innapropriate key words
+    // Prevent innapropriate key words
     private var flagWord = "fuck"
     
-    var post: Posts?{
-        didSet{
+    var post: Posts? {
+        didSet {
             
             guard let title = post?.title else {return}
             guard let subReddit = post?.subReddit else {return}
@@ -32,19 +32,24 @@ class PostsCell: UITableViewCell {
             guard let votes = post?.votes else {return}
             guard let time = post?.time else {return}
             
-            //String of URL
+            // String of URL
             guard let imgString = post?.imgURL else {return}
             
             
-            //URL
+            // URL
             guard let imgURL = URL(string: imgString) else {return}
             
-            //Prevent posts that are innapropriate
+            // Prevent posts that are innapropriate
             guard over18 != true else {return}
+            
+            
+            // flag word
             let wordCheck = title.components(separatedBy: " ")
             guard !wordCheck.contains(flagWord.capitalized) else {return}
             
-            //Cache if image already downloaded
+            
+            
+            // Cache if image already downloaded
             if let cachedImage = imageCache[imgString]{
                 self.avaImage.image = cachedImage
                 titleLabel.text = "\(title)/\(subReddit)"
@@ -52,11 +57,13 @@ class PostsCell: UITableViewCell {
                 dateLabel.text = convertDate(dateDoube: time)
                 return
             }
-            //Call get Image
+            
+            
+            // Call get Image
             getImage(imgURL: imgURL)
             
             
-            //Assign values to view
+            // Assign values to view
             titleLabel.text = "\(title)/\(subReddit)"
             numberOfVotesLbl.text = String("\(votes) votes")
             dateLabel.text = convertDate(dateDoube: time)
@@ -64,17 +71,18 @@ class PostsCell: UITableViewCell {
         }
     }
     
-    //Get images
-    fileprivate func getImage(imgURL:URL){
-        //Set nil everytime prior to load
+    // Get images
+    fileprivate func getImage(imgURL:URL) {
+        
+        // Set nil everytime prior to load
         avaImage.image = nil
         
-        //Request image loading in background
+        // Request image loading in background
         DispatchQueue.global(qos: .userInteractive).async {[weak self] in
             URLSession.shared.dataTask(with: imgURL) { (data, response, error) in
                 if error != nil {
                     print("Failed loading image \(error!.localizedDescription)")
-                }else{
+                } else {
                     if let data = data {
                         guard  let image = UIImage(data: data) else {return}
                         self?.imageCache[imgURL.absoluteString] = image
@@ -87,8 +95,8 @@ class PostsCell: UITableViewCell {
         }
     }
     
-    //Convert from UTC to readable date
-    fileprivate func convertDate(dateDoube:Double)->String{
+    // Convert from UTC to readable date
+    fileprivate func convertDate(dateDoube:Double)->String {
         let dateFormatter = DateFormatter()
         let theDate = Date(timeIntervalSince1970: dateDoube)
         dateFormatter.dateStyle = .short

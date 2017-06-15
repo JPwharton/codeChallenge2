@@ -18,13 +18,8 @@ class PostsVC: UITableViewController {
        getPosts()
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+   
     // MARK: - Table view data source
-    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -50,13 +45,14 @@ class PostsVC: UITableViewController {
             URLSession.shared.dataTask(with:url , completionHandler: { (data, response, error) in
                 guard error == nil else {print("Error in GET \(error!.localizedDescription)");return}
                 guard let data = data else {return}
-                    let rawJSON = try? JSONSerialization.jsonObject(with: data)
-                    guard let json = rawJSON as? [String:Any] else {return}
+                let rawJSON = try? JSONSerialization.jsonObject(with: data)
+                guard let json = rawJSON as? [String:Any] else {return}
+                
                 //GET INSIDE JSON NODES
-                if let parentData = json["data"] as? [String:Any]{
-                    if let childrenNode = parentData["children"] as? [[String:Any]]{
+                if let parentData = json["data"] as? [String:Any] {
+                    if let childrenNode = parentData["children"] as? [[String:Any]] {
                         childrenNode.forEach({ (key) in
-                            if let childData = key["data"]as? [String:Any]{
+                            if let childData = key["data"]as? [String:Any] {
                                 guard let post = Posts(json: childData) else {return}
                                 self?.posts.append(post)
                             }
